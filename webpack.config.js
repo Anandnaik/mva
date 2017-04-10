@@ -8,7 +8,6 @@ const cssDev = ['style-loader', 'css-loader', 'sass-loader'];
 const cssProd = ExtractTextPlugin.extract({
   fallback: 'style-loader',
   use: ['css-loader', 'sass-loader'],
-  publicPath: '/dist'
 });
 const cssLoader = isProd ? cssProd : cssDev;
 
@@ -33,7 +32,7 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
-        use: 'file-loader'
+        use: 'file-loader?name=images/[name].[ext]'
       }
     ]
   },
