@@ -19,6 +19,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js'
   },
+  resolve: {
+    extensions: ['.js', '.scss']
+  },
   module: {
     rules: [
       {
@@ -46,7 +49,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       minify: {
-        collapseWhitespace: true
+        // collapseWhitespace: true
       },
       hash: true,
       template: './src/index.html'

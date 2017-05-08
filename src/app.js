@@ -3,7 +3,10 @@ import css from './app.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// Components
+import App from './components/App/App';
+
 ReactDOM.render(
-  <h1></h1>,
+  <App />,
   document.getElementById('app')
 );
