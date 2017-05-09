@@ -4,7 +4,7 @@ const Header = (props) => (
   <header className="header">
     <div className="header__banner">
       <h1>Michigan Vipassana Association</h1>
-      <p>Vipassana mediatation as taught by S.N. Goenka in the tradition of Sayagi U Ba Khin.</p>
+      <p>Vipassana mediatation as taught by S.N. Goenka in the tradition of Sayaji U Ba Khin.</p>
     </div>
     <nav className="header__nav">
       <ul className="header__buttons-container">

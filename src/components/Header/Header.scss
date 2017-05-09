@@ -1,18 +1,25 @@
 .header {
   width: 100%;
+  border-bottom: 1px solid $mva-grey-1;
 }
 .header__banner {
   display: flex;
-  height: 128px;
+  height: 112px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   h1 {
     font-family: $pt-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: $mva-grey-4;
     margin: 0;
   }
   p {
+    font-family: $pt-sans;
+    color: $mva-grey-3;
     margin: 0;
+    font-size: 15px;
   }
 }
 .header__nav {
@@ -21,8 +28,8 @@
 }
 .header__buttons-container {
   display: flex;
-  flex-basis: 1060px;
-  justify-content: flex-start;
+  flex-basis: 960px;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -32,10 +39,15 @@
   align-items: center;
   justify-content: center;
   height: 36px;
-  flex-basis: 100px;
-  color: $mva-black;
-  font-weight: thick;
+  font-family: $source-sans-pro;
+  font-size: 14px;
+  // color: $mva-green;
+  color: $mva-dark-blue;
+  font-weight: bold;
+  text-transform: uppercase;
   &:hover {
+    color: $mva-green;
+    cursor: pointer;
     text-decoration: underline;
   }
 }
