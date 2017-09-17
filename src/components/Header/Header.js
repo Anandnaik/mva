@@ -3,8 +3,12 @@ import React, { PropTypes } from 'react';
 const Header = (props) => (
   <header className="header">
     <div className="header__banner">
-      <h1>Michigan Vipassana Association</h1>
-      <p>Vipassana mediatation as taught by S.N. Goenka in the tradition of Sayaji U Ba Khin.</p>
+      <div className="header__dhamma-chakra"></div>
+      <div className="header__title">
+        <h1>Michigan Vipassana Association</h1>
+        <p>Vipassana mediatation as taught by S.N. Goenka in the tradition of Sayaji U Ba Khin.</p>
+      </div>
+      <div className="header__dhamma-leaf"></div>
     </div>
     <nav className="header__nav">
       <ul className="header__buttons-container">
@@ -17,6 +21,9 @@ const Header = (props) => (
         <li className="header__button">Old Students</li>
       </ul>
     </nav>
+    <div className="header__image-banner">
+      
+    </div>
   </header>
 );
 
