@@ -21,9 +21,7 @@ const Header = (props) => (
         <li className="header__button">Old Students</li>
       </ul>
     </nav>
-    <div className="header__image-banner">
-      
-    </div>
+    <div className="header__image-banner"></div>
   </header>
 );
 
