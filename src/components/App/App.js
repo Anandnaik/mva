@@ -8,7 +8,6 @@ const App = (props) => (
     <Header />
     <MainContent />
     <Footer />
-    
   </div>
 );
 
