@@ -1,6 +1,7 @@
 .header {
   @include respond-to('small') {
     border-bottom: none;
+    display: none;
   };
   width: 100%;
 }
@@ -94,7 +95,6 @@
   display: flex;
   flex: 1 1 auto;
   height: 220px;
-  border-bottom: 1px solid $mva-grey-2;
   background-image: url('./images/ketunen.jpg');
   background-position: center;
   background-size: cover;

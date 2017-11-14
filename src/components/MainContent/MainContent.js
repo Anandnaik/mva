@@ -2,9 +2,6 @@ import React from 'react';
 
 const MainContent = (props) => (
   <main className="main-content">
-    <div className="main-coneent__image-banner">
-
-    </div>
     <div className="main-content__intro-section">
       <div className="main-content__intro">
         <h2>Introduction to Vipassana Meditation</h2>
