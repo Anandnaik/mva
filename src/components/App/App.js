@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer';
 const App = (props) => (
   <div className="mva-app">
     <Header />
-    <MainContent />
+    {props.children}
     <Footer />
   </div>
 );

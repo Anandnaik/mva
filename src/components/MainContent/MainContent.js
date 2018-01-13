@@ -9,11 +9,11 @@ const MainContent = (props) => (
       </div>
       <div className="main-content__intro">
         <h2>What to Expect on a Course</h2>
-        <p>To learn Vipassana Meditation one needs to develop one's own experience during a residential ten day course. Courses are held throughout the year at the Centre and are conducted in English.</p>
+        <p>To learn Vipassana Meditation one needs to develop one's own experience during a residential ten day course. Courses are held throughout the year and are conducted in English.</p>
       </div>
       <div className="main-content__intro">
         <h2>How to Apply for a Course</h2>
-        <p>Find out about the prerequisites and how to apply for a Vipassana course in Ontario.</p>
+        <p>Find out about the prerequisites and how to apply for a Vipassana course in Michigan.</p>
       </div>
     </div>
   </main>
