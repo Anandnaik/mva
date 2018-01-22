@@ -1,12 +1,19 @@
 .header {
   @include respond-to('small') {
     border-bottom: none;
-    display: none;
+  }
+  @include respond-to('medium') {
+    
   };
   width: 100%;
 }
 
 .header__banner {
+  @include respond-to('small') {
+    text-align: center;
+    flex-direction: column;
+    height: 286px;
+  };
   display: flex;
   height: 136px;
   align-items: center;
@@ -37,6 +44,9 @@
 }
 
 .header__dhamma-leaf {
+  @include respond-to('small') {
+    display: none;
+  };
   width: 90px;
   height: 90px;
   margin-left: 12px;
@@ -61,14 +71,22 @@
   border-bottom: 1px solid $mva-gold;
   border-top: 1px solid $mva-grey-2;
 }
+
 .header__buttons-container {
   display: flex;
   flex-basis: 960px;
-  justify-content: center;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
+  > li .header__button {
+    border-left: 1px solid $mva-grey-2;
+  }
+  > li:last-child .header__button {
+    border-right: 1px solid $mva-grey-2;
+  }
 }
+
 .header__button {
   display: flex;
   align-items: center;
@@ -81,10 +99,6 @@
   font-weight: bold;
   text-transform: uppercase;
   padding: 0 32px;
-  border-left: 1px solid $mva-grey-2;
-  &:last-child {
-    border-right: 1px solid $mva-grey-2;
-  }
   &:hover {
     color: $mva-green;
     cursor: pointer;
@@ -92,6 +106,9 @@
   }
 }
 .header__image-banner {
+  @include respond-to('small') {
+    background-position: 72%;
+  };
   display: flex;
   flex: 1 1 auto;
   height: 220px;

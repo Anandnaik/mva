@@ -25,7 +25,7 @@ ReactDOM.render(
   >
     <Router history={browserHistory}>
       <Route path="/" component={App}>
-        <Route path="/" component={MainContent} />
+        <Route path="/home" component={MainContent} />
       </Route>
     </Router>
   </Provider>,

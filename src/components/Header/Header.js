@@ -17,7 +17,7 @@ const Header = props => (
     <nav className="header__nav">
       <ul className="header__buttons-container">
         <li>
-          <Link className="header__button" to="/">Home</Link>
+          <Link className="header__button" to="/home">Home</Link>
         </li>
         <li>
           <Link className="header__button" to="/about">About</Link>
