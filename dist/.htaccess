@@ -1,0 +1,13 @@
+# RewriteEngine on
+# RewriteBase /new_wip/
+# RewriteCond %{REQUEST_URI} !^/new_wip/index.html$
+# RewriteRule . /new_wip/index.html [L]
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /new_wip
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /new_wip/index.html [L]
+ </IfModule>

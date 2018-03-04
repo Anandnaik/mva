@@ -3,9 +3,9 @@ import css from './app.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';
+import { Router, Route, hashHistory } from "react-router";
 
 import { Provider } from 'react-redux';
-import { Router, Route, browserHistory } from 'react-router';
 
 // Components
 import App from './components/App/App';
@@ -22,10 +22,10 @@ ReactDOM.render(
       window.__REDUX_DEVTOOLS_EXTENSION__ &&
         window.__REDUX_DEVTOOLS_EXTENSION__()
     )}
-  >
-    <Router history={browserHistory}>
-      <Route path="/" component={App}>
-        <Route path="/home" component={MainContent} />
+  > 
+    <Router history={hashHistory}>
+      <Route component={App}>
+       <Route path="/" component={MainContent} />
       </Route>
     </Router>
   </Provider>,
