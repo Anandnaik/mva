@@ -17,25 +17,109 @@ const Header = props => (
     <nav className="header__nav">
       <ul className="header__buttons-container">
         <li>
-          <Link className="header__button" to="/">Home</Link>
+          <Link className="header__button" to="/">
+            Home
+          </Link>
         </li>
         <li>
-          <Link className="header__button" to="/about">About</Link>
+          <span className="header__button">About</span>
+          <ul className="header__dropdown header__dropdown--about">
+            <li>
+              <a
+                className="header__button"
+                href="http://www.dhamma.org/en/about/vipassana"
+                target="_blank"
+              >
+                Introduction to Vipassana
+                <span className="fas fa-external-link-alt" />
+              </a>
+            </li>
+            <li>
+              <a
+                className="header__button"
+                href="http://video.server.dhamma.org/video/intro/vintro.htm"
+                target="_blank"
+              >
+                Vipassana Meditation Video
+                <span className="fas fa-external-link-alt" />
+              </a>
+            </li>
+            <li>
+              <a
+                className="header__button"
+                href="http://www.dhamma.org/en/about/goenka"
+                target="_blank"
+              >
+                About S.N. Goenka
+                <span className="fas fa-external-link-alt" />
+              </a>
+            </li>
+            <li>
+              <a
+                className="header__button"
+                href="http://www.dhamma.org/en/about/qanda"
+                target="_blank"
+              >
+                Frequently Asked Questions
+                <span className="fas fa-external-link-alt" />
+              </a>
+            </li>
+          </ul>
         </li>
         <li>
-          <Link className="header__button" to="/courseinfo">Course Info</Link>
+          <span className="header__button" to="/courseinfo">
+            Course Info
+          </span>
+          <ul className="header__dropdown header__dropdown--course-info">
+            <li>
+              <a
+                className="header__button"
+                href="http://www.dhamma.org/en/about/code"
+                target="_blank"
+              >
+                Code of Discipline
+                <span className="fas fa-external-link-alt" />
+              </a>
+            </li>
+            <li>
+              <a
+                className="header__button"
+                href="https://www.dhamma.org/en-US/schedules/noncenter/mi.us"
+                target="_blank"
+              >
+                Course Schedule
+                <span className="fas fa-external-link-alt" />
+              </a>
+            </li>
+            <li>
+              <Link
+                className="header__button"
+                to="/youth"
+              >
+                Youth Courses
+              </Link>
+            </li>
+          </ul>
         </li>
         <li>
-          <Link className="header__button" to="/mva">MVA</Link>
+          <Link className="header__button" to="/mva">
+            MVA
+          </Link>
         </li>
         <li>
-          <Link className="header__button" to="/alradyregistered">Alreay Registered?</Link>
+          <Link className="header__button" to="/alreadyregistered">
+            Alreay Registered?
+          </Link>
         </li>
         <li>
-          <Link className="header__button" to="/contactus">Contact Us</Link>
+          <Link className="header__button" to="/contactus">
+            Contact Us
+          </Link>
         </li>
         <li>
-          <Link className="header__button" to="/os">Old Students</Link>
+          <Link className="header__button" to="/os">
+            Old Students
+          </Link>
         </li>
       </ul>
     </nav>

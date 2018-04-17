@@ -3,18 +3,18 @@ import css from './app.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';
-import { Router, Route, hashHistory } from "react-router";
+import { Router, Route, hashHistory, browserHistory } from "react-router";
 
 import { Provider } from 'react-redux';
 
 // Components
 import App from './components/App/App';
-import MainContent from './components/MainContent/MainContent';
+import Home from './components/Home/Home';
 
 import { reducer } from './reducers/rdc.app';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
-
+ 
 ReactDOM.render(
   <Provider
     store={createStoreWithMiddleware(
@@ -22,10 +22,10 @@ ReactDOM.render(
       window.__REDUX_DEVTOOLS_EXTENSION__ &&
         window.__REDUX_DEVTOOLS_EXTENSION__()
     )}
-  > 
-    <Router history={hashHistory}>
+  >
+    <Router history={browserHistory}>
       <Route component={App}>
-       <Route path="/" component={MainContent} />
+        <Route path="/" component={Home} />
       </Route>
     </Router>
   </Provider>,

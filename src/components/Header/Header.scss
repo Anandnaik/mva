@@ -1,29 +1,27 @@
 .header {
-  @include respond-to('small') {
-    border-bottom: none;
-  }
+  border-bottom: none;
   @include respond-to('medium') {
-    
+    width: 100%;
   };
-  width: 100%;
 }
 
 .header__banner {
-  @include respond-to('small') {
-    text-align: center;
-    flex-direction: column;
-    height: 286px;
-  };
   display: flex;
-  height: 136px;
   align-items: center;
   justify-content: center;
   background-color: $mva-grey-1;
+  text-align: center;
+  flex-direction: column;
+  height: 286px;
+  @include respond-to('medium') {
+    height: 136px;
+    flex-direction: row;
+  };
 }
 
 .header__dhamma-chakra {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   margin-right: 12px;
   background-image: url('./images/dhamma-chakra.svg');
   background-size: contain;
@@ -35,41 +33,54 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 16px;
+  line-height: 36px;
+  @include respond-to('medium') {
+    margin-top: 0;
+    line-height: auto;
+  };
   p {
     font-family: $pt-sans;
     color: $mva-grey-3;
     margin: 0;
     font-size: 15px;
+    padding: 0 16px;
+    margin-top: 6px;
+    @include respond-to('medium') {
+      margin-top: 0;
+      padding: 0;
+    };
   }
 }
 
 .header__dhamma-leaf {
-  @include respond-to('small') {
-    display: none;
+  display: none;
+  @include respond-to('medium') {
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin-left: 12px;
+    background-image: url('./images/dhamma-leaf.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
   };
-  width: 90px;
-  height: 90px;
-  margin-left: 12px;
-  background-image: url('./images/dhamma-leaf.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
 }
 
 .header__nav {
-  @include respond-to('small') {
-    display: none;
+  display: none;
+  @include respond-to('medium') {
+    display: flex;
+    justify-content: center;
+    padding: 0 24px;
+    border-bottom: 1px solid $mva-gold;
+    border-top: 1px solid $mva-grey-2;
   };
-  display: flex;
-  justify-content: center;
-  padding: 0 24px;
-  border-bottom: 1px solid $mva-gold;
-  border-top: 1px solid $mva-grey-2;
 }
 
 .header__buttons-container {
@@ -79,6 +90,26 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  > li {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    & .header__dropdown {
+      background-color: $mva-white;
+      a {
+        text-transform: none;
+        font-size: 16px;
+        justify-content: left;
+        border-bottom: 1px solid $mva-grey-2;
+      }
+    }
+    &:hover .header__dropdown {
+      left: 0;
+      opacity: 1;
+    }
+  }
   > li .header__button {
     border-left: 1px solid $mva-grey-2;
   }
@@ -88,6 +119,7 @@
 }
 
 .header__button {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,7 +128,7 @@
   font-family: $source-sans-pro;
   font-size: 14px;
   color: $mva-dark-blue;
-  font-weight: bold;
+  font-weight: normal;
   text-transform: uppercase;
   padding: 0 32px;
   &:hover {
@@ -105,15 +137,38 @@
     text-decoration: underline;
   }
 }
+
 .header__image-banner {
-  @include respond-to('small') {
-    background-position: 72%;
-  };
+  background-position: 72%;
   display: flex;
   flex: 1 1 auto;
   height: 220px;
   background-image: url('./images/ketunen.jpg');
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  @include respond-to('medium') {
+    background-position: center;
+  };
+}
+
+.header__dropdown {
+  border-top: 1px solid $mva-gold;
+  position: absolute;
+  left: -999em;
+  top: 36px;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  .fa-external-link-alt {
+    margin-left: 8px;
+  }
+}
+
+.header__dropdown--about {
+  width: 278px;
+}
+
+.header__dropdown--course-info {
+  width: 278px;
 }

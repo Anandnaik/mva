@@ -1,14 +1,13 @@
 $breakpoints: (
-  'small'  : 667px,
-  'medium' : 992px,
-  'large'  : 1200px
+  'medium': 667px,
+  'large': 992px,
 );
 
 @mixin respond-to($name) {
   // If the key exists in the map
   @if map-has-key($breakpoints, $name) {
     // Prints a media query based on the value
-    @media (max-width: #{inspect(map-get($breakpoints, $name))}) {
+    @media (min-width: #{inspect(map-get($breakpoints, $name))}) {
       @content;
     }
   }

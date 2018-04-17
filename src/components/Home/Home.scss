@@ -1,0 +1,16 @@
+.main-content__intro-section {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  @include respond-to('medium') {
+    flex-direction: row;
+  };
+}
+
+.main-content__intro {
+  @include respond-to('medium') {
+    width: 250px;
+  }
+}

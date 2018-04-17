@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  height: 100%;
   background-color: $mva-white;
   justify-content: space-between;
 }
@@ -39,4 +40,24 @@ a {
   &:hover {
     text-decoration: underline;
   }
+}
+
+.main-content {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  min-height: 286px;
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8px 12px;
+  min-width: 320px;
+  @include respond-to('medium') {
+    width: 960px;
+    min-height: 420px;
+  };
+  @include respond-to('large') {
+    width: 992px;
+    min-height: 420px;
+  };
 }

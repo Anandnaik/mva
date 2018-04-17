@@ -2,13 +2,14 @@ import React from 'react';
 import { Router, Route, browserHistory } from "react-router";
 
 import Header from '../Header/Header';
-import MainContent from '../MainContent/MainContent';
 import Footer from '../Footer/Footer';
 
 const App = props => (
   <div className="mva-app">
     <Header />
-    {props.children}
+    <main className="main-content">
+      {props.children}
+    </main>
     <Footer />
   </div>
 );
