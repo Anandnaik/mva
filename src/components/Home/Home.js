@@ -1,8 +1,8 @@
 import React from 'react';
 
 const MainContent = props => (
-  <div className="main-content__intro-section">
-    <div className="main-content__intro">
+  <div className="home__intro-section">
+    <div className="home__intro">
       <h2>Introduction to Vipassana Meditation</h2>
       <p>
         Vipassana, which means to see things as they really are, is one of
@@ -14,7 +14,7 @@ const MainContent = props => (
         </a>.
       </p>
     </div>
-    <div className="main-content__intro">
+    <div className="home__intro">
       <h2>Course Information</h2>
       <p>
         To learn Vipassana Meditation one needs to develop one's own experience
@@ -25,7 +25,7 @@ const MainContent = props => (
         </a>&nbsp; under the Course Information link above.
       </p>
     </div>
-    <div className="main-content__intro">
+    <div className="home__intro">
       <h2>How to Apply for a Course</h2>
       <p>
         To apply for a course, please fill out an online application on

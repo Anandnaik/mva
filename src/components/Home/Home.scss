@@ -1,4 +1,4 @@
-.main-content__intro-section {
+.home__intro-section {
   display: flex;
   flex: 1 1 auto;
   justify-content: space-between;
@@ -9,7 +9,7 @@
   };
 }
 
-.main-content__intro {
+.home__intro {
   @include respond-to('medium') {
     width: 250px;
   }
