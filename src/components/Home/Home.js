@@ -2,7 +2,7 @@ import React from 'react';
 
 const MainContent = props => (
   <div className="home__intro-section">
-    <div className="home__intro">
+    <article className="home__intro">
       <h2>Introduction to Vipassana Meditation</h2>
       <p>
         Vipassana, which means to see things as they really are, is one of
@@ -13,8 +13,8 @@ const MainContent = props => (
           Art of Living
         </a>.
       </p>
-    </div>
-    <div className="home__intro">
+    </article>
+    <article className="home__intro">
       <h2>Course Information</h2>
       <p>
         To learn Vipassana Meditation one needs to develop one's own experience
@@ -24,8 +24,8 @@ const MainContent = props => (
           Code of Discipline
         </a>&nbsp; under the Course Information link above.
       </p>
-    </div>
-    <div className="home__intro">
+    </article>
+    <article className="home__intro">
       <h2>How to Apply for a Course</h2>
       <p>
         To apply for a course, please fill out an online application on
@@ -37,7 +37,7 @@ const MainContent = props => (
           Course Schedule
         </a>&nbsp; page.
       </p>
-    </div>
+    </article>
   </div>
 );
 

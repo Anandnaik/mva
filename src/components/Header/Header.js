@@ -17,7 +17,7 @@ const Header = props => (
     <nav className="header__nav">
       <ul className="header__buttons-container">
         <li>
-          <Link className="header__button" to="/new_wip/">
+          <Link className="header__button" to="/">
             Home
           </Link>
         </li>
@@ -67,7 +67,7 @@ const Header = props => (
           </ul>
         </li>
         <li>
-          <span className="header__button" to="/new_wip/courseinfo">
+          <span className="header__button" to="/courseinfo">
             Course Info
           </span>
           <ul className="header__dropdown header__dropdown--course-info">
@@ -94,7 +94,7 @@ const Header = props => (
             <li>
               <Link
                 className="header__button"
-                to="/new_wip/youth"
+                to="/youth"
               >
                 Youth Courses
               </Link>
@@ -102,22 +102,22 @@ const Header = props => (
           </ul>
         </li>
         <li>
-          <Link className="header__button" to="/new_wip/mva">
+          <Link className="header__button" to="/mva">
             MVA
           </Link>
         </li>
         <li>
-          <Link className="header__button" to="/new_wip/alreadyregistered">
+          <Link className="header__button" to="/alreadyregistered">
             Alreay Registered?
           </Link>
         </li>
         <li>
-          <Link className="header__button" to="/new_wip/contactus">
+          <Link className="header__button" to="/contactus">
             Contact Us
           </Link>
         </li>
         <li>
-          <Link className="header__button" to="/new_wip/os">
+          <Link className="header__button" to="/os">
             Old Students
           </Link>
         </li>

@@ -24,9 +24,9 @@ ReactDOM.render(
     )}
   >
     <Router history={browserHistory}>
-      <Route path="/" component={App}>
-        <Route path="/new_wip/" component={Home} />
-        <Route path="/new_wip/youth" component={Youth} />
+      <Route component={App}>
+        <Route path="/" component={Home} />
+        <Route path="/youth" component={Youth} />
       </Route>
     </Router>
   </Provider>,

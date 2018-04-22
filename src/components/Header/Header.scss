@@ -85,11 +85,8 @@
 
 .header__buttons-container {
   display: flex;
-  flex-basis: 960px;
+  flex-basis: 992px;
   justify-content: space-between;
-  list-style: none;
-  margin: 0;
-  padding: 0;
   > li {
     position: relative;
     display: flex;
@@ -162,6 +159,7 @@
   list-style-type: none;
   .fa-external-link-alt {
     margin-left: 8px;
+    color: $mva-grey-5;
   }
 }
 
