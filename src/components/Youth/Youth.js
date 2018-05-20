@@ -1,6 +1,7 @@
 import React from 'react';
 
 import QuickLinks from 'components/QuickLinks/QuickLinks';
+import TimeTable from 'components/TimeTable';
 
 const links = [
   {
@@ -29,6 +30,27 @@ const links = [
     isExternal: true
   }
 ];
+
+const sampleTimeTableObject = {
+  headings: ['Time Period', 'Activity'],
+  rows: [
+    ['9:00', 'Course Registration Begins'],
+    ['9:30', 'Welcome and Orientation talk for children and parents'],
+    ['10:00', 'Course begins in Meditation Hall (Anapana and the 5 Promises)'],
+    ['10:45', 'Activities'],
+    ['11:15', 'Meditation Hall Activities'],
+    ['12:00', 'Lunch/Rest/Activities'],
+    ['12:50', 'Meditation Hall Activities'],
+    ['1:50', 'Activities'],
+    ['2:20', 'Meditation Hall Activities'],
+    ['2:50', 'Games/Snacks '],
+    ['3:20 ', 'Meditation Hall Activities'],
+    ['4:00', 'Break'],
+    ['4:10', 'Closing Discourse and Metta'],
+    ['4:30', 'Course Ends'],
+    ['4:30-4:50', 'Cleanup'],
+  ]
+}
 
 const Youth = () => (
   <div className="youth">
@@ -151,6 +173,17 @@ const Youth = () => (
         </li>
       </ul>
       <h2 id="sample-timetable">Sample Timetable</h2>
+      <TimeTable
+        headings={sampleTimeTableObject.headings}
+        rows={sampleTimeTableObject.rows}
+        tableId="youth-sample-timetable"
+      />
+      <h2 id="apply">Apply</h2>
+      <p>
+        Application Forms:-
+        <a className="youth__application-form-link" href="./files/mva_child_app_packet.pdf" target="_blank">Children's Course Student Application</a>
+        <a className="youth__application-form-link" href="./files/mva_ctc_server_app_packet.pdf" target="_blank">Children's Course Server Application</a>
+      </p>
       <h2 id="parent">Information for Parent or Guardian</h2>
       <p>
         The children’s/teen course offers young people between the ages 

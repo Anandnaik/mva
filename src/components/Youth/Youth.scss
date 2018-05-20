@@ -26,3 +26,22 @@
   font-weight: bold;
   margin-bottom: 6px;
 }
+
+.youth__application-form-link {
+  display: block;
+}
+
+#youth-sample-timetable {
+  .time-table__column-heading {
+    &:first-child {
+      min-width: 190px;
+      max-width: 190px;
+    }
+  }
+  .time-table__cell {
+    &:first-child {
+      min-width: 190px;
+      max-width: 190px;
+    }
+  }
+}

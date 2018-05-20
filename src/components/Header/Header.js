@@ -108,7 +108,7 @@ const Header = props => (
         </li>
         <li>
           <Link className="header__button" to="/alreadyregistered">
-            Alreay Registered?
+            Already Registered?
           </Link>
         </li>
         <li>

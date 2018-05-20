@@ -1,14 +1,14 @@
 import React, { PropTypes } from 'react';
 
 const QuickLinks = (props) => {
-  const renderLinks = () => props.links.map(link => {
+  const renderLinks = () => props.links.map((link, index) => {
     const renderExternalLinkIcon = () => (
       <span className="quick-links__icon-container">
         <i className="fas fa-external-link-alt" />
       </span>
     );
     return (
-      <li>
+      <li key={`quick-links-${index}`}>
         <a className="quick-links__link"
           href={link.url}
           target={link.isExternal ? '_blank' : '_self'}
