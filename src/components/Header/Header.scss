@@ -22,10 +22,12 @@
 .header__dhamma-chakra {
   width: 100px;
   height: 100px;
-  margin-right: 12px;
   background-image: url('./images/dhamma-chakra.svg');
   background-size: contain;
   background-repeat: no-repeat;
+  @include respond-to('medium') {
+    margin-right: 12px;
+  };
 }
 
 .header__title {
