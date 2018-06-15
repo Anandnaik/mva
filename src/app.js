@@ -14,6 +14,9 @@ import Home from './components/Home/Home';
 import Youth from './components/Youth/Youth';
 import Mva from "./components/Mva/Mva";
 
+const isProd = process.env.NODE_ENV === "production";
+export const new_wip = isProd ? '/new_wip' : "";
+
 const createStoreWithMiddleware = applyMiddleware()(createStore);
  
 ReactDOM.render(
@@ -26,9 +29,9 @@ ReactDOM.render(
   >
     <Router history={browserHistory}>
       <Route component={App}>
-        <Route path="/" component={Home} />
-        <Route path="/youth" component={Youth} />
-        <Route path="/mva" component={Mva} />
+        <Route path={`${new_wip}/`} component={Home} />
+        <Route path={`${new_wip}/youth`} component={Youth} />
+        <Route path={`${new_wip}/mva`} component={Mva} />
       </Route>
     </Router>
   </Provider>,

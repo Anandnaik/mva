@@ -6,27 +6,28 @@ import CodeOfConduct from './components/code-of-conduct';
 import SampleTimeTable from './components/sample-time-table';
 import Apply from './components/apply';
 import ParentInfo from './components/parent-info';
+import { new_wip } from '../../app';
 
 const links = [
   {
     text: `Introduction`,
-    url: "/youth#introduction"
+    url: `${new_wip}/youth#introduction`
   },
   {
     text: `Code of conduct`,
-    url: "/youth#code-of-conduct"
+    url: `${new_wip}/youth#code-of-conduct`
   },
   {
     text: `Sample Timetable`,
-    url: "/youth#sample-timetable"
+    url: `${new_wip}/youth#sample-timetable`
   },
   {
     text: `Register / Apply`,
-    url: "/youth#apply"
+    url: `${new_wip}/youth#apply`
   },
   {
     text: `Information for Parent or Guardian`,
-    url: "/youth#parent"
+    url: `${new_wip}/youth#parent`
   },
   {
     text: `International Children's Course Website`,

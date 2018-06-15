@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
+import { new_wip } from '../../app';
 
 const Header = props => (
   <header className="header">
@@ -17,7 +18,7 @@ const Header = props => (
     <nav className="header__nav">
       <ul className="header__buttons-container">
         <li>
-          <Link className="header__button" to="/">
+          <Link className="header__button" to={`${new_wip}/`}>
             Home
           </Link>
         </li>
@@ -67,7 +68,7 @@ const Header = props => (
           </ul>
         </li>
         <li>
-          <span className="header__button" to="/courseinfo">
+          <span className="header__button" to={`${new_wip}/courseinfo`}>
             Course Info
           </span>
           <ul className="header__dropdown header__dropdown--course-info">
@@ -94,7 +95,7 @@ const Header = props => (
             <li>
               <Link
                 className="header__button"
-                to="/youth"
+                to={`${new_wip}/youth`}
               >
                 Youth Courses
               </Link>
@@ -102,22 +103,22 @@ const Header = props => (
           </ul>
         </li>
         <li>
-          <Link className="header__button" to="/mva">
+          <Link className="header__button" to={`${new_wip}/mva`}>
             MVA
           </Link>
         </li>
         <li>
-          <Link className="header__button" to="/alreadyregistered">
+          <Link className="header__button" to={`${new_wip}/alreadyregistered`}>
             Already Registered?
           </Link>
         </li>
         <li>
-          <Link className="header__button" to="/contactus">
+          <Link className="header__button" to={`${new_wip}/contactus`}>
             Contact Us
           </Link>
         </li>
         <li>
-          <Link className="header__button" to="/os">
+          <Link className="header__button" to={`${new_wip}/os`}>
             Old Students
           </Link>
         </li>
