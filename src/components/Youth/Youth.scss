@@ -3,12 +3,12 @@
   display: flex;
   text-align: left;
   margin-top: 24px;
-  article {
+  > article {
     padding-right: 24px;
     flex: 1;
     box-sizing: border-box;
   }
-  aside {
+  > aside {
     width: 260px;
   }
 }

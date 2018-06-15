@@ -1,0 +1,14 @@
+.mva {
+  position: relative;
+  display: flex;
+  text-align: left;
+  margin-top: 24px;
+  > article {
+    padding-right: 24px;
+    flex: 1;
+    box-sizing: border-box;
+  }
+  > aside {
+    width: 260px;
+  }
+}

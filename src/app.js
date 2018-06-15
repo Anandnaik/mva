@@ -12,6 +12,7 @@ import { reducer } from './reducers/rdc.app';
 import App from './components/App/App';
 import Home from './components/Home/Home';
 import Youth from './components/Youth/Youth';
+import Mva from "./components/Mva/Mva";
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
  
@@ -27,6 +28,7 @@ ReactDOM.render(
       <Route component={App}>
         <Route path="/" component={Home} />
         <Route path="/youth" component={Youth} />
+        <Route path="/mva" component={Mva} />
       </Route>
     </Router>
   </Provider>,
