@@ -1,0 +1,25 @@
+.already-registered {
+  position: relative;
+  display: flex;
+  text-align: left;
+  margin-top: 24px;
+  > article {
+    padding-right: 24px;
+    flex: 1;
+    box-sizing: border-box;
+    ul {
+      margin-left: 40px;
+      margin-top: 16px;
+      list-style-type: disc;
+      li {
+        margin-bottom: 12px;
+      }
+    }
+  }
+  > aside {
+    width: 260px;
+  }
+}
+.already-registered__sub-h1 {
+  margin-top: 64px;
+}

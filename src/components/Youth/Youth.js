@@ -8,26 +8,26 @@ import Apply from './components/apply';
 import ParentInfo from './components/parent-info';
 import { new_wip } from '../../app';
 
-const links = [
+const quickLinks = () => [
   {
     text: `Introduction`,
-    url: `${new_wip}/youth#introduction`
+    url: `#introduction`
   },
   {
     text: `Code of conduct`,
-    url: `${new_wip}/youth#code-of-conduct`
+    url: `#code-of-conduct`
   },
   {
     text: `Sample Timetable`,
-    url: `${new_wip}/youth#sample-timetable`
+    url: `#sample-timetable`
   },
   {
     text: `Register / Apply`,
-    url: `${new_wip}/youth#apply`
+    url: `#apply`
   },
   {
     text: `Information for Parent or Guardian`,
-    url: `${new_wip}/youth#parent`
+    url: `#parent`
   },
   {
     text: `International Children's Course Website`,
@@ -46,7 +46,7 @@ const Youth = () => (
       <ParentInfo />
     </article>
     <aside>
-      <QuickLinks links={links} />
+      <QuickLinks links={quickLinks()} />
     </aside>
   </div>
 );

@@ -1,11 +1,12 @@
 import React from "react";
 
 import QuickLinks from "components/QuickLinks/QuickLinks";
+import { new_wip } from "../../app";
 
-const quickLinks = [
+const quickLinks = () => [
   {
     text: `Contact Info`,
-    url: "/contactus"
+    url: `${new_wip}/contact-us`
   },
   {
     text: `Course Schedule`,
@@ -51,7 +52,7 @@ const Mva = () => (
       </p>
     </article>
     <aside>
-      <QuickLinks links={quickLinks} />
+      <QuickLinks links={quickLinks()} />
     </aside>
   </div>
 );

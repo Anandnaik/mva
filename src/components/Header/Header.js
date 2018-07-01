@@ -108,7 +108,7 @@ const Header = props => (
           </Link>
         </li>
         <li>
-          <Link className="header__button" to={`${new_wip}/alreadyregistered`}>
+          <Link className="header__button" to={`${new_wip}/already-registered`}>
             Already Registered?
           </Link>
         </li>
