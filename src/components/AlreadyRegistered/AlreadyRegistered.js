@@ -23,7 +23,6 @@ const quickLinks = () => [
 ];
 
 const AlreadyRegistered = () => {
-  console.log("new_wip: ", new_wip);
   return <div className="already-registered">
       <article>
         <h1>Already Registered</h1>
@@ -36,11 +35,6 @@ const AlreadyRegistered = () => {
           </li>
           <li>
             I know how to get to the centre For directions see Getting Here
-          </li>
-          <li>
-            I have the center’s phone number for bus pickup/emergencies Phone:
-            +1 705-434-9850 If you don’t have a cell phone, please use our
-            toll-free number at pay phones: +1-877-434-9850
           </li>
           <li>I have packed everything I need</li>
         </ul>

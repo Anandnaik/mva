@@ -113,7 +113,7 @@ const Header = props => (
           </Link>
         </li>
         <li>
-          <Link className="header__button" to={`${new_wip}/contactus`}>
+          <Link className="header__button" to={`${new_wip}/contact-us`}>
             Contact Us
           </Link>
         </li>

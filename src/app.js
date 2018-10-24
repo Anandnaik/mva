@@ -19,6 +19,7 @@ import Home from './components/Home/Home';
 import Youth from './components/Youth/Youth';
 import Mva from "./components/Mva/Mva";
 import AlreadyRegistered from "./components/AlreadyRegistered/AlreadyRegistered";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
@@ -40,6 +41,7 @@ ReactDOM.render(
           path={`${new_wip}/already-registered`}
           component={AlreadyRegistered}
         />
+        <Route path={`${new_wip}/contact-us`} component={ContactUs} />
       </Route>
     </Router>
   </Provider>,
