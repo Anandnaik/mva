@@ -1,2 +1,2 @@
 # mva
-Volunteer web development project for Michigan Vipassana Association. 
+Volunteer W.I.P. web development project for Michigan Vipassana Association. 
